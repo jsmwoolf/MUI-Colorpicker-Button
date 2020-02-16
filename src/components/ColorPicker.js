@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import compose from 'recompose/compose'
 import withState from 'recompose/withState'
 
-import TextField from '@material-ui/core/TextField'
+import Button from '@material-ui/core/Button'
 
 import { DEFAULT_CONVERTER, converters } from '../transformers'
 import PickerDialog from './PickerDialog'
@@ -12,40 +12,30 @@ const ColorPicker = ({
   // ColorPicker
   onChange,
   convert,
-
-  // Text field
   name,
-  id,
-  hintText,
-  placeholder,
-  floatingLabelText,
-  label,
-  TextFieldProps,
+
+  // Button
   value,
 
   // State
   showPicker,
   setShowPicker,
   internalValue,
-  setValue,
-
-  ...custom
+  setValue
 }) => (
   <>
-    <TextField
-      name={name}
-      id={id}
-      label={floatingLabelText || label}
-      placeholder={hintText || placeholder}
+    <Button
       onClick={() => setShowPicker(true)}
       onChange={e => {
         setValue(e.target.value)
         onChange(e.target.value)
       }}
-      InputProps={{ style: { color: value === undefined ? internalValue : value } }}
-      {...TextFieldProps}
-      {...custom}
-    />
+      style={{
+        backgroundColor: value
+      }}
+    >
+      {name}
+    </Button>
     {showPicker && (
       <PickerDialog
         value={value === undefined ? internalValue : value}
@@ -68,12 +58,6 @@ ColorPicker.propTypes = {
   onChange: PropTypes.func,
   convert: PropTypes.oneOf(Object.keys(converters)),
   name: PropTypes.string,
-  id: PropTypes.string,
-  hintText: PropTypes.string,
-  placeholder: PropTypes.string,
-  label: PropTypes.string,
-  floatingLabelText: PropTypes.string,
-  TextFieldProps: PropTypes.shape(TextField.propTypes),
   showPicker: PropTypes.bool,
   setShowPicker: PropTypes.func,
   internalValue: PropTypes.string,
