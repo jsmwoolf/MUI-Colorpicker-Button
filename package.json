@@ -1,7 +1,7 @@
 {
-  "name": "@josephwoolf/MUI-Colorpicker-Button",
-  "version": "3.4.0",
-  "description": "Color picker component (derived from [Loic Mahieu's repository](https://github.com/loicmahieu/material-ui-color-picker) for material-ui",
+  "name": "mui-colorpicker-button",
+  "version": "1.0.0",
+  "description": "Color picker component for Material-Ui",
   "main": "lib/index.js",
   "scripts": {
     "test": "npm run lint",
@@ -26,7 +26,8 @@
     "react",
     "color",
     "picker",
-    "selector"
+    "selector",
+    "material-ui"
   ],
   "author": "Joseph Woolf",
   "license": "MIT",

@@ -19,15 +19,15 @@ import React from 'react'
 import ColorPicker from 'material-ui-color-picker'
 
 <ColorPicker
-  name='color'
-  defaultValue='#000'
-  // value={this.state.color} - for controlled component
   onChange={color => console.log(color)}
-
+  /* 
+    Add the below attribute if you want the button
+    to change color.
+  */
+  value={value} 
+  name='Change color'
 />
 ```
-
-There is not so much properties at this time. The was very quickly designed for my needs. Feel free to submit a PR with new features ;)
 
 ## License
 
