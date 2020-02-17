@@ -9,14 +9,14 @@ This Color Picker component for material-ui derives from [Loic Mahieu's reposito
 For material-ui (v1):
 
 ```sh
-npm install --save material-ui-color-picker
+npm install --save mui-colorpicker-button
 ```
 
 ## Usage
 
 ```js
 import React from 'react'
-import ColorPicker from 'material-ui-color-picker'
+import ColorPicker from 'mui-colorpicker-button'
 
 <ColorPicker
   onChange={color => console.log(color)}
