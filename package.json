@@ -1,7 +1,7 @@
 {
-  "name": "material-ui-color-picker",
+  "name": "@josephwoolf/MUI-Colorpicker-Button",
   "version": "3.4.0",
-  "description": "<ColorInput> component for material-ui",
+  "description": "Color picker component (derived from [Loic Mahieu's repository](https://github.com/loicmahieu/material-ui-color-picker) for material-ui",
   "main": "lib/index.js",
   "scripts": {
     "test": "npm run lint",
@@ -19,7 +19,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/loicmahieu/material-ui-color-picker.git"
+    "url": "git+https://github.com/jsmwoolf/MUI-Colorpicker-Button.git"
   },
   "keywords": [
     "reactjs",
@@ -28,12 +28,12 @@
     "picker",
     "selector"
   ],
-  "author": "Loic Mahieu",
+  "author": "Joseph Woolf",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/loicmahieu/material-ui-color-picker/issues"
+    "url": "https://github.com/jsmwoolf/MUI-Colorpicker-Button/issues"
   },
-  "homepage": "https://github.com/loicmahieu/material-ui-color-picker#readme",
+  "homepage": "https://github.com/jsmwoolf/MUI-Colorpicker-Button#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.3",
     "@babel/core": "^7.8.3",

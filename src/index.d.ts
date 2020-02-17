@@ -3,11 +3,8 @@ import { converters } from "./transformers";
 import { FC } from "react";
 
 type props = {
-  defaultValue?: string;
   onChange: (color: string) => void;
   convert?: keyof converters;
-  hintText?: string;
-  floatingLabelText?: string;
   showPicker?: boolean;
   internalValue?: string;
   setShowPicker?: (open: boolean) => void;
